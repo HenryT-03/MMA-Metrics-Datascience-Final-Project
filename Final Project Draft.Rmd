@@ -1,0 +1,31 @@
+---
+title: "Final Project Draft"
+author: "Henry Tang"
+date: "2025-11-30"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+library(tidyverse)
+```
+
+## Introduction
+
+This project seeks to find patterns within physical traits such as age, height, and reach, and performance metrics such as win rates, strike differential (rate of strikes landed vs opponent), takedown success rates, knockdowns, etc.
+The goal is to find objective empirical patterns between physical traits and performance.
+
+## Data Description
+
+The dataset comes from the kaggle dataset https://www.kaggle.com/datasets/remypereira/mma-dataset-2023-ufc
+containing the key variables of age, height, reach, wins, losses, stance, and fight data like weightclass, strikes landed and strikes attempted, takedowns and takedown attempts, and knockdowns.
+
+```{r}
+fighters <- read_csv("ufc_fighter_data.csv")
+fights <- read_csv("ufc_fight_stat_data.csv")
+```
+
+## Research Questions
+Whart sort of relationships exist between height/reach/age and win percentage/takedown accuracy/significiant strike accuracy/knockdowns landed per fight?
+How does strike count change by weight? How does strike disparity change by reach?
+
