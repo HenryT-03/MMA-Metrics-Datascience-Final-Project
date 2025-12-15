@@ -1,0 +1,5 @@
+variable,tables,n_tables,types
+event_id,"events, fight_data",2,numeric | numeric
+fight_id,"fight_stat, fight_data",2,numeric | numeric
+fight_url,"fight_stat, fight_data",2,character | character
+fighter_id,"fighters, fight_stat",2,numeric | numeric
